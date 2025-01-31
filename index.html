@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignment-3</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
+
+    <!-- daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/eb3d67e9a3.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bike-primary': 'rgba(23, 152, 0, 1)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sora">
+
+    <!-- header section -->
+    <header class="bg-[#EFEBE3]">
+        <!-- nav bar -->
+        <nav class=" max-[768px]:border border-0.5 border-bike-primary lg:w-5/6 mx-auto">
+            <section class="flex justify-between items-center h-[100px] max-[768px]:hidden ">
+                <img class="text-xl" src="c2-assets/logo-header.png" alt="">
+                <div>
+                    <ul class="flex ml-32 md:gap-8 text-xl">
+                        <li>Product</li>
+                        <li>Services</li>
+                        <li>Contact us</li>
+                    </ul>
+                </div>
+                <div class="md:space-x-5">
+                    <i class="text-xl fa-solid fa-magnifying-glass"></i>
+                    <i class="text-xl fa-solid fa-cart-shopping origin-right"></i>
+                    <button class="rounded-lg px-4 py-1.5 border border-1 border-bike-primary text-xl">Login</button>
+                    <button class="text-xl rounded-lg px-4 py-2 bg-bike-primary text-white">Register</button>
+                </div>
+            </section>
+
+            <section class="w-11/12 py-5 mx-auto flex justify-between items-center min-[768px]:hidden ">
+                <img src="c2-assets/logo-header.png" alt="">
+                <i class="fa-solid fa-bars text-bike-primary text-4xl"></i>
+            </section>
+        </nav>
+
+        <!-- fresh title -->
+         <div class="text-center place-items-center mt-20">
+            <div class="">
+                <h1 class="font-semibold text-5xl md:text-6xl mb-6">Freshness You Can <br class="max-[768px]:hidden">
+                    Count On, Prices You’ll Love!</h1>
+                    <p class=" md:text-xl mb-6">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+                <img src="c2-assets/hero-vegetables.png" alt="">
+         </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+   <!-- service section -->
+    <div class="w-5/6 mx-auto mt-36">
+        <h1 class="font-semibold text-4xl text-bike-primary mb-14">Services</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="card bg-[#EFEBE3]  shadow-xl">
+                <div class="rounded-full w-36 mx-auto bg-white mt-8">
+                  <img
+                    src="c2-assets/service.png"
+                    alt="Shoes"
+                    class=" p-5 " />
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-semibold text-2xl md:text-4xl">24/7 Services </h2>
+                  <p class="md:text-2xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  
+                </div>
+              </div>
+            <div class="card bg-[#EFEBE3]  shadow-xl">
+                <div class="rounded-full w-36 mx-auto bg-white mt-8">
+                  <img
+                    src="c2-assets/delivery.png"
+                    alt="Shoes"
+                    class=" p-5 " />
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-semibold text-2xl md:text-4xl">Fast Delivery </h2>
+                  <p class="md:text-2xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  
+                </div>
+              </div>
+            <div class="card bg-[#EFEBE3]  shadow-xl">
+                <div class="rounded-full w-36 mx-auto bg-white mt-8">
+                  <img
+                    src="c2-assets/healthy.png"
+                    alt="Shoes"
+                    class=" p-5 " />
+                </div>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-semibold text-2xl md:text-4xl">Healthy Products </h2>
+                  <p class="md:text-2xl text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+
+    </main>
+
+    <!-- footer section -->
+    <footer></footer>
+
+</body>
+
+</html>
